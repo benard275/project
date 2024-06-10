@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Panel</title>
+
+        <style>
+            @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+            @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+            *{
+				box-sizing: border-box;
+			}
+			
+			body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f5f5f5;
+				padding: 0;
+				margin: 0;
+            }
+
+            header {
+                background-color: #333;
+                color: #f5f5f5;
+                padding: 20px;
+                text-align: center;
+            }
+
+            nav {
+                float: left;
+                width: 15%;
+                height: 700px;
+                background-color: #555;
+                padding: 20px;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav li {
+                padding: 10px 0;
+            }
+
+            nav a {
+                color: #f5f5f5;
+                text-decoration: none;
+            }
+
+            article {
+                float: left;
+                padding: 20px;
+                width: 85%;
+                margin-top: -700px;
+                margin-left: 19%;
+                margin-right: 0;
+                background-color: #f5f5f5;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            table th, td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            table th {
+                background-color: #555;
+                color: white;
+            }
+
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+
+            input[type=submit] {
+                background-color: #555;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #333;
+            }
+
+            .row:after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .fa {
+                padding-right: 10px;
+            }
+
+            a:hover {
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Admin's Panel</h1>
+        </header>
+        <div class="row">
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i>&nbsp;&nbsp;Dashboard</a></li>
+                    <li><a href="pages.html"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;&nbsp;Pages</a></li>
+                    <li><a href="posts.html"><i class="fas fa-edit"></i>&nbsp;&nbsp;Posts</a></li>
+                    <li><a href="comments.html"><i class="fas fa-comments"></i>&nbsp;&nbsp;Comments</a></li>
+                    <li><a href="users.html"><i class="fas fa-users"></i>&nbsp; Users</a></li>
+                    <li><a href="settings.html"><i class="fa fa-gear"></i>&nbsp;Settings</a></li>
+                    <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>Welcome to the Admin Panel</h2>
+                <p>Here you can manage and control all pages of the website.</p>
+                <h3>Pages</h3>
+                <p><a href="#">Add New Page</a></p>
+                <table>
+                    <thead>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Home</td>
+                            <td>Admin</td>
+                            <td>01/01/2022</td>
+                            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>About Us</td>
+                            <td>Admin</td>
+                            <td>02/01/2022</td>
+                            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Posts</h3>
+                <p><a href="#">Add New Post</a></p>
+                <table>
+                    <thead>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Post 1</td>
+                            <td>Admin</td>
+                            <td>01/01/2022</td>
+                            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Post 2</td>
+                            <td>Admin</td>
+                            <td>02/01/2022</td>
+                            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+    </body>
+</html>
